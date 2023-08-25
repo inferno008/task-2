@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task 4</title>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <p id="output"></p>
+
+    <script>
+        var myname = "   buvan   ";
+
+        // string methods
+        document.getElementById("output").innerHTML += "myname.length: " + myname.length + "<br>";
+        document.getElementById("output").innerHTML += "myname.charAt(3): " + myname.charAt(3) + "<br>";
+        document.getElementById("output").innerHTML += "myname.toLowerCase(): " + myname.toLowerCase() + "<br>";
+        document.getElementById("output").innerHTML += "myname.trim(): " + myname.trim() + "<br>";
+        document.getElementById("output").innerHTML += "myname.toUpperCase(): " + myname.toUpperCase() + "<br>";
+
+        // number method
+        const number = 23.45434332;
+        document.getElementById("output").innerHTML += "number.toPrecision(4): " + number.toPrecision(4) + "<br>";
+        document.getElementById("output").innerHTML += "number.toFixed(3): " + number.toFixed(3) + "<br>";
+        document.getElementById("output").innerHTML += "number.toString(): " + number.toString() + "<br>";
+
+        let thousand = 1000;
+        numb = thousand.toExponential();
+        document.getElementById("output").innerHTML += "numb: " + numb + "<br>";
+
+        let x = 50043
+        x.valueOf();
+        document.getElementById("output").innerHTML += "x: " + x + "<br>";
+
+        // array methods
+        let colours = ["red", "Orange", "blue", "green"];
+        document.getElementById("output").innerHTML += "colours.length: " + colours.length + "<br>";
+        document.getElementById("output").innerHTML += "colours.indexOf('Orange'): " + colours.indexOf('Orange') + "<br>";
+        document.getElementById("output").innerHTML += "colours.includes('black'): " + colours.includes('black') + "<br>";
+
+        let numbers = [1,2,3,4,5];
+        document.getElementById("output").innerHTML += "numbers.shift(): " + numbers.shift() + "<br>";
+        document.getElementById("output").innerHTML += "numbers: " + numbers + "<br>";
+
+        numbers.push('100');
+        document.getElementById("output").innerHTML += "numbers.push('100'): " + numbers + "<br>";
+
+        // date methods
+        let d = new Date();
+        document.getElementById("output").innerHTML += "d.toString(): " + d.toString() + "<br>";
+        document.getElementById("output").innerHTML += "d.getFullYear(): " + d.getFullYear() + "<br>";
+        document.getElementById("output").innerHTML += "d.getHours(): " + d.getHours() + "<br>";
+        document.getElementById("output").innerHTML += "d.getMilliseconds(): " + d.getMilliseconds() + "<br>";
+        document.getElementById("output").innerHTML += "d.getMinutes(): " + d.getMinutes() + "<br>";
+
+        // function methods
+        function myFunction(n1, n2){
+            product = n1 * n2;
+            return product;
+        }
+        document.getElementById("output").innerHTML += "myFunction(100, 100): " + myFunction(100, 100) + "<br>";
+
+        function myFunction(h, b){
+            area_of_triangle = 1/2 * b * h;
+            return area_of_triangle;
+        }
+        document.getElementById("output").innerHTML += "myFunction(20, 40): " + myFunction(20, 40) + "<br>";
+    </script>
+</body>
+</html>

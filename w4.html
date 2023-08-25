@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Style Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h> this website has details of 3 wild animals</h>
+            <h1>bear</h1>
+            <img src="bear.jpg.jpg" alt="bear" height="500">
+            <p>Bears are carnivoran mammals of the family Ursidae. They are classified as caniforms, or doglike carnivorans. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout most of the Northern Hemisphere and partially in the Southern Hemisphere. Bears are found on the continents of North America, South America, and Eurasia. Common characteristics of modern bears include large bodies with stocky legs, long snouts, small rounded ears, shaggy hair, plantigrade paws with five nonretractile claws, and short tails.</p>
+        </div>
+        <br>
+        <div class="item">
+            <h1>tiger</h1>
+
+            <img src="tiger.jpg.jpg">
+
+            <p>The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside. An apex predator, it primarily preys on ungulates, such as deer and wild boar. It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat to support its requirements for prey and rearing of its offspring. Tiger cubs stay with their mother for about two years and then become independent, leaving their mother's home range to establish their own.</p>
+        </div>
+        
+        
+        <div class="item">
+            <h1>cheetah</h1>
+            <img src="cheetah.jpg.jpg" alt="Description of the image">
+            <p>The cheetah (Acinonyx jubatus) is a large cat native to Africa, central Iran and India (reintroduced). It is the fastest land animal, capable of running at 80 to 98 km/h (50 to 61 mph); as such, it has evolved specialized adaptations for speed, including a light build, long thin legs and a long tail. It typically reaches 67–94 cm (26–37 in) at the shoulder, and the head-and-body length is between 1.1 and 1.5 m (3 ft 7 in and 4 ft 11 in). Adults weigh between 21 and 72 kg (46 and 159 lb). Its head is small and rounded, with a short snout and black tear-like facial streaks. The coat is typically tawny to creamy white or pale buff and is mostly covered with evenly spaced, solid black spots. Four subspecies are recognised.</p>
+        </div>
+        
+        
+    </div>
+
+    <style>
+        @media screen and (min-width: 80rem) {
+            .container {
+                margin: 1em 2em;
+            }
+        }
+
+        .container {
+            column-count: 3;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .item {
+            flex: 1;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        img,
+        picture,
+        video {
+            max-width: 100%;
+        }
+
+        html {
+            font-size: 1em;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        h1 {
+            font-size: 6vw;
+        }
+
+        h1 {
+            font-size: calc(1.5rem + 3vw);
+        }
+    </style>
+</body>
+</html>
